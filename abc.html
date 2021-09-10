@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+        padding:0;margin:0;box-sizing:border-box;
+        }
+        .header{
+            width:100%;
+            height:70px;
+            background-color:grey;
+            padding: 0 20px;
+            position: sticky;top:0px
+        }
+        .header h2{
+            line-height: 70px;
+            float: left;
+            text-transform: uppercase;
+            color: white;
+        }
+        .header .menu{
+            list-style: none;
+            float: right;
+            
+        }
+        .menu li{
+            display: inline-block;
+            line-height: 70px;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 0px 20px;
+            transition: .4s;
+        }
+        .menu li a:hover,.show-btn:hover,.hide-btn:hover{
+            color: skyblue;
+        }
+        .show-btn, .hide-btn{
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            display: none;
+            transition: .4s;
+        }
+        .show-btn{
+            float: right;
+        }
+        #chk{
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
+        }
+        @media(max-width:800px){
+            .show-btn, .hide-btn
+            {
+                display: block;
+            }
+            .menu{
+                position: fixed;
+                top:0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: #333;
+                text-align: 80px 0;
+                transition: .7s;
+                line-height: normal;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #chk:checked ~ .menu{
+                right: 0;
+            }
+            .menu li{
+                display: block;
+                padding: 20px 0;
+            }
+            .menu li a{
+                display: block;
+                
+            }
+            .hide-btn{
+                position: absolute;
+                right:20px ;
+                top:10px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class ="header">
+        <h2>Beta-Labs</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">Blog</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+            
+        </li>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times"></i>
+        </label>
+    </ul>
+    </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1586244346603-b97b4fdb87e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80">
+
+    <p class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus facilis velit doloribus esse, veritatis iste eveniet architecto magnam quibusdam sint aliquam assumenda consequuntur debitis. Delectus, dolores maxime. Dolorum animi quae itaque obcaecati accusamus consequatur tempore atque reiciendis magnam nihil molestias sunt asperiores consectetur aliquid totam, doloribus ab cumque odit suscipit harum, molestiae iure voluptas porro? Soluta voluptates hic nulla esse dolores laudantium adipisci, nostrum quidem sequi excepturi quis amet alias aspernatur ea illum dolorum quasi incidunt et in ab ipsum commodi provident consequatur? Et ipsum velit corrupti molestiae quas atque provident delectus. Qui fuga debitis dolorem voluptatem excepturi. Voluptates obcaecati corrupti perferendis eligendi quia animi quod aut unde, illo odio cumque minus dicta doloribus quasi repellat, enim nisi est aliquid placeat vero magni dolore. Minus explicabo aliquam, labore sunt vero molestias eius distinctio tempore culpa suscipit quidem velit vel, temporibus, corrupti quia placeat animi doloribus deleniti. Officiis, expedita? Qui inventore temporibus quibusdam eos reiciendis! Ut voluptate quae saepe aperiam eius libero eum sed a, pariatur expedita facere voluptatibus reiciendis perferendis adipisci. At quia ducimus quos reiciendis voluptatem nobis, a quasi aperiam neque voluptate optio corrupti vel? Sapiente asperiores repellat perferendis odio eaque sequi corrupti quis cumque perspiciatis ullam laborum laboriosam temporibus dolor necessitatibus cum, nihil dignissimos consequuntur labore. Inventore rerum expedita cumque fugiat cupiditate ullam temporibus, odit quisquam. Necessitatibus nisi at itaque laudantium molestias? Doloribus veniam eveniet sint repudiandae deserunt reprehenderit animi? Nobis doloremque assumenda id ut sit est incidunt rem repudiandae voluptas, ad ipsa laborum, debitis ipsam saepe temporibus harum iusto, quidem iste fugiat corrupti. Deserunt fugit labore laboriosam harum perferendis earum, officia unde excepturi cumque molestiae reiciendis optio minima incidunt praesentium aspernatur ratione atque. Autem veniam, libero nisi rerum explicabo corporis saepe accusantium suscipit harum! Eligendi dolore adipisci necessitatibus eveniet, ducimus quos voluptatum delectus, esse, deleniti voluptas repudiandae? Et repellat consequuntur adipisci laborum iure magni corrupti optio eum tempora ducimus doloremque itaque quia, eligendi assumenda, nemo labore voluptatem error. Tempore possimus vero vitae necessitatibus nisi porro deserunt, voluptatibus, obcaecati accusantium magni minus quod corrupti laborum architecto sint odit similique ea ut, labore voluptates nihil eum modi iusto. Assumenda corporis quam voluptatem accusantium quia dolorum, quibusdam hic ex necessitatibus ea fuga distinctio odit exercitationem minima labore, soluta totam ratione cum quaerat incidunt nostrum itaque esse? Nostrum mollitia voluptatibus corporis est optio unde, amet odit, ullam iusto numquam sint aspernatur! Explicabo assumenda ullam excepturi, praesentium aliquid laudantium ex eius quam quas culpa ad? Enim voluptatem, deleniti, dolores distinctio architecto, veritatis eligendi libero eum consequuntur nam quia aliquam vero quaerat dignissimos id placeat blanditiis sit repellendus minima suscipit nemo dolorem earum veniam? Enim nam, atque obcaecati natus quia ducimus amet autem reiciendis omnis tempora aliquid quidem odio libero. Consectetur cum magnam, exercitationem soluta suscipit nesciunt aliquam quidem. Soluta recusandae nulla quia fuga et dolorem, totam voluptatibus eligendi ullam, vitae sed ipsam nostrum. Mollitia ipsam ipsum doloremque sint ducimus id consequuntur eveniet soluta doloribus dicta impedit hic pariatur quia expedita fugiat reprehenderit, deleniti, molestias dignissimos, reiciendis voluptate ad! Deserunt, earum ducimus?</p>
+    </div>
+</body>
+</html>
