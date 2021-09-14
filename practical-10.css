@@ -332,6 +332,11 @@ i{
         width:100%;
         text-align: center;
     }
+    
+}
+@-ms-viewport{
+    width: 100%;
+    text-align: center;
 }
 
 
