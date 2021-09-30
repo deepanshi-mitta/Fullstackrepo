@@ -1,35 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color: khaki;">
-   <h1>
-      <span style="color: red;"> Practical 4:Create a website having list of all practical and their individual practical Page links.</span>
-   </h1> 
-   <h2>Output</h2>
-   <h3>Welcome to Live Practical Book</h3>
-   <p>
-       This is Live Practical Book for the Subject FullStack Web Development-1.In this book we are performing all the practicals related to Front-end web Development including topics from HTML,CSS,JS and Bootstrap.This book is hosted on Github cloud platform .You can view all the practicals from this Book.
-   </p>
-   <h1><span style="color:green;">List of Practicals</span></h1>
-   <p>
-       1.Create a Web page including HTML basic skeleton using Offline HTML Editor and Online Sandbox Environment.<a href="./practical-1.html">Practical-1</a><br>
-       2.Create a web page showing a basic html structure using character Entities and span Tag.<a href="practical-2.html">Practical-2</a><br>
-       3.Live your first Web Page on GitHub.<a href="practical-3.html">Practical-3</a><br>
-       4.Create a website having list of all practicals and their individual Practical page links.<a href="index.html">Practical-4</a><br>
-       5.Create a website having a clickable image.<a href ="practical-5.html">Practical-5</a><br>
-       6.Create following Layout using css layout properties.<a href="practical-6.html">Practical-6</a><br>
-       7.Create a Web Page Layout using div tags.<a href="practical7.html">Practical-7</a><br>
-       8.Create a Web Page having Fixed Navigation Bar with the given content.<a href="practical-8.html">Practical-8</a><br>
-       9.Create a Responsive Web Layout with Responsive Navigation Bar.<a href="practical-9.html">Practical-9</a><br>
-       10.Create a Responsive Side-Bar Navigation Menu.<a href="practical-10.html">Practical-10</a><br>
-       11.Create a Responsive Footer Template.<a href="practical-11.html">Practical-11</a>
-    
-       
-   </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        border-style: 0;
+      }
+
+      body {
+        background-color: lightgrey;
+      }
+      .wrapper {
+        width: 1100px;
+        background-color: #fff;
+
+        margin: 40px auto;
+        border: 1px solid black;
+      }
+      td {
+        height: 60px;
+      }
+      .custom-table {
+        width: 100%;
+        margin: 0 auto;min-width: 400px;
+        border:2px solid black;
+      }
+      .sub {
+        color: green;
+      }
+
+      .custom-table td,
+      .custom-table th {
+        /* width:150px; */
+        /* text-align: center; */
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 1px solid #dddddd;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      i:hover {
+        color: blue;
+      }
+      .head {
+        color: green;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        vertical-align: middle;
+      }
+      thead {
+        color: black;
+        font-size: 20px;
+      }
+      p {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        background-color:#008080;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+      }
+      i {
+        color: grey;
+      }
+      /* tbody tr:nth-child(odd){ */
+      /* background-color: #edf3e2; */
+
+      /* } */
+    </style>
+  </head>
+  <body style="background-color: #ecebbd">
+    <div class="wrapper">
+      <table class="custom-table">
+        <colgroup class="c1"></colgroup>
+        <colgroup class="c2"></colgroup>
+        <colgroup class="c3"></colgroup>
+        <colgroup class="c4"></colgroup>
+        <thead>
+          <p>Full stack Live practical Book.</p>
+          <tr>
+            <td>
+              <b>#</b>
+            </td>
+            <td>
+              <b>Practical Name</b>
+            </td>
+            <td>
+              <b>Link</b>
+            </td>
+            <td>
+              <b>Status</b>
+            </td>
+            <td>
+              <b>Tools</b>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              Create a Web page including HTML basic skeleton using Offline HTML
+              Editor and Online Sandbox Environment.
+            </td>
+            <td>
+              <a href="./practical-1.html">Practical-1</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              Create a web page showing a basic html structure using character
+              Entities and span Tag.
+            </td>
+            <td>
+              <a href="./practical-2.html">Practical-2</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Live your first Web Page on GitHub.</td>
+            <td>
+              <a href="./practical-3.html">Practical-3</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+
+            <td>
+              Create a website having list of all practicals and their
+              individual Practical page links.
+            </td>
+            <td>
+              <a href="./practical-4.html">Practical-4</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+
+            <td>Create a website having a clickable image.</td>
+            <td>
+              <a href="./practical-5.html">Practical-5</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+
+            <td>Create following Layout using css layout properties.</td>
+            <td>
+              <a href="./practical-6.html">Practical-6</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+
+            <td>Create a Web Page Layout using div tags.</td>
+            <td>
+              <a href="./practical7.html">Practical-7</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+
+            <td>
+              Create a Web Page having Fixed Navigation Bar with the given
+              content
+            </td>
+            <td>
+              <a href="./practical-8.html">Practical-8</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+
+            <td>
+              Create a Responsive Web Layout with Responsive Navigation Bar.
+            </td>
+            <td>
+              <a href="./practical-9.html">Practical-9</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+
+            <td>Create a Responsive Side-Bar Navigation Menu.</td>
+            <td>
+              <a href="./practical-10.html">Practical-10</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+
+            <td>Create a Responsive Footer Template.</td>
+            <td>
+              <a href="./practical-11.html">Practical-11</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+                Create a Table that represent Live Practical Book Records .
+
+            </td>
+            <td>
+              <a href="./index.html">Practical-12</a>
+            </td>
+            <td class="sub">Submitted.</td>
+            <td>
+              <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+              <i class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
