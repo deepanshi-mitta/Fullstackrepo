@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your Plan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        border-style: 0;
+      }
+    
+
+        p{
+            text-align: centre;
+            font-size: 30px;
+            font-weight: bold;
+            height: 20px;
+            width:100%;
+        }
+    
+        .wrapper{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 20px;
+            width:50%;
+            background-color: white;
+            margin-right: 0 auto;
+    
+        }
+        .c1{
+            background-color: #c1dcb7;
+        }
+        .c2{
+            background-color:#bad6c8;
+        }
+        .c3{
+            background-color: #bbd3dc;
+        }
+        .c4{
+            background-color:#d5e4bc;
+        }
+        tr:nth-child(even) {  
+        background:#edf3e2;  
+}  
+        .custom-table {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        border-collapse: collapse;
+        margin-left: 10px;
+    
+      }
+    
+        td{
+            height: 35px;
+            text-align: center;
+            padding: 5px 8px;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+            font-size: 20px;
+            
+
+        }
+        body{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: lightgrey;
+        }
+        .button{
+            background-color: purple;
+            border-radius: 10px;
+            font-size: 25px;
+            padding:10px;
+            font-weight: bold;
+            width: 120px;
+            color: white;
+        }
+        .head td{
+            font-size: 30px;
+            color:purple;
+            padding: 30px;
+        }
+        .head i{
+            color:purple;
+        }
+        .fa fa-times i{
+            color:red;
+        }
+        .times {
+            color: red;
+        }
+        .check{
+            color:green;
+        }
+        .rate td{
+            color:green;
+            font-size: 25px;
+        }
+</style>
+</head>
+</head>
+<body>
+    <div class="wrapper">
+    <table class="custom-table">
+        <colgroup class="c1"></colgroup>
+        <colgroup class="c2"></colgroup>
+        <colgroup class="c3"></colgroup>
+        <colgroup class="c4"></colgroup>
+    <tbody>
+       <h1>Select Your Plan</h1>
+       <tr class="head">
+        <td><b><i class="fa fa-building"></i>Basic</b></td>
+        <td><b><i class="fa fa-superpowers"></i>Plus</b></td>
+        <td><b><i class="fa fa-telegram"></i>Delux</b></td>
+        <td><b><i class="fa fa-tachometer"></i>Pro</b></td>
+</tr>
+       
+    <tr class="rate">
+            <td>Rs. 500/-</td>
+            <td>Rs. 1500/-</td>
+            <td>Rs 2500/-</td>
+            <td>Rs.3500/-</td>
+    </tr>
+    <tr>
+           <td>50 pages</td>
+            <td>75 pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+ 
+    </tr>
+    <tr>
+        <td>10 sites</td>
+        <td>25 sites</td>
+        <td>100 sites</td>
+        <td>Unlimited</td>
+
+    </tr>
+    <tr>
+        <td>50 MB</td>
+        <td>250 MB</td>
+        <td>1GB</td>
+        <td>5 GB</td>
+ 
+    </tr>
+    <tr>
+        <td>included</td>
+        <td>included</td>
+        <td>included</td>
+        <td>included</td>
+ <tr>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+
+</tr>
+<tr>
+    
+    <td><b><i class ="fa fa-times times"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+</tr>
+<tr>
+    
+    <td><b><i class ="fa fa-times times"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+</tr>
+
+<tr>
+    <td><b><i  class ="fa fa-times times"></i></b></td>
+    <td><b><i  class ="fa fa-times times"></i></b></td>
+    <td><b><i  class ="fa fa-check check"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+
+</tr>
+<tr>
+    <td><b><i  class ="fa fa-times times"></i></b></td>
+    <td><b><i  class ="fa fa-times times"></i></b></td>
+    <td><b><i  class ="fa fa-times times"></i></b></td>
+    <td><b><i class ="fa fa-check check"></i></b></td>
+
+</tr>
+
+<tr>
+    <td>
+        <button class="button">
+            <a>SignUp</a>
+        </button>
+    </td>
+    <td>
+        <button class="button">
+            <a>SignUp</a>
+        </button>
+    </td>
+    <td>
+        <button class="button">
+            <a>SignUp</a>
+        </button>
+    </td>
+    <td>
+        <button class="button">
+            <a>SignUp</a>
+        </button>
+    </td>
+    </tr>
+
+
+    
+    </tbody>
+</table>
+</div>
+    
+</body>
+</html>
