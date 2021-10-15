@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightseagreen;
+        }
+        .inputfield{
+            
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+            
+            
+        }
+        h1{
+            font-size: 50px;
+            color: white;
+            margin-top: 20px;
+        }
+        
+        .wrapper .inputfield input {
+            padding: 5px;
+            height: 40px;
+             }
+             .inputfield button{
+                 height: 40px;
+                 width: 40px;
+                 background-color: blue;
+                 border-radius: 5px;
+                 border: none;
+                 opacity:0.6;
+                 pointer-events: none;
+             }
+             .todolist{
+                 font-size: 25px;
+                 padding: 25px;
+             }
+             .todolist li{
+                 padding: 10px;
+                 position: relative;
+                 background-color: #f2f2f2;
+                 border-radius: 3px;
+                 margin-bottom: 8px;
+                 padding: 0px 15px;
+                 list-style: none;
+                 margin-left: -30px;
+             }
+             .todolist li span{
+                position:absolute;
+                right:0px;
+                color:lightgrey;
+                background-color: red;
+                border-radius: 0px 3px 3px 0px;
+                width: 45px;
+                text-align: center;
+                cursor:pointer;
+                
+             }
+             .inputfield button.active{
+                 opacity:1;
+                 pointer-events: auto;
+             }
+
+             
+
+             
+            
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Full stack to do-List</h1>
+        <div class="inputfield">
+            <input  type="text" placeholder="Add your To-Do" size="40" >
+            <button>
+                <i class="fa fa-plus"></i>
+            </button>
+            <ul class="todolist">
+            
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crude Firebase</title>
+    <style>
+        *{
+            padding: 0;
+            box-sizing: 0;
+            margin: 0;
+        }
+        .container{
+            justify-content: center;
+            align-items: center;
+            border:2px solid black;
+            border-radius: 10px;
+            padding: 50px;
+            margin-top: 150px;
+            background-color: white;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightpink;
+
+        }
+        .form{
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            
+        }
+       
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+        <h1>CRUD WITH FIREBASE</h1>
+        </div>
+        <hr>
+        <br>
+        <div class="form">
+        RollNo:<input type="text"name ="RollNo" id="roll" size="35"/><br><br>
+        Name:<input type="text"name ="name" id="name" size="35"/><br><br>
+        Gender:<input type="text"name ="gender" id="gender"  size="35"/><br><br>
+        Address:<input type="text"name ="address" id="address" size="35"/><br><br>
+    </div>
+    <div class="buttons">
+        <button id="insert">Insert</button>
+        <button id="read">Read</button>
+        <button id="update">Update</button>
+        <button id="delete">Delete</button>
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="crud.js"></script>
+    <script src="fireConfig.js"></script>
+    
+</body>
+</html>

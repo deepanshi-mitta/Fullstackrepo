@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Practical-15</title>
+    <style>
+        *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: pink;
+}
+.wrapper{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    margin-left: 40px;
+}
+.para{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.buttons{
+    padding: 30px;
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: yellow;
+    border: 6px black;
+
+}
+.b2{
+    margin-left: 80px;
+    padding: 10px;
+}
+.b1{
+    padding: 10px;
+    margin-right: 50px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="heading">Counter</h1>
+        <div class="buttons">
+            <button class="b1">
+                <i class="fa fa-plus"></i>
+            </button>
+            <p class="para"></p>
+          <button class="b2" id="btn">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
