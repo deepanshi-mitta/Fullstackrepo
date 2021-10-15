@@ -15,28 +15,31 @@
         margin: 0;
         border-style: 0;
       }
-      .Load{
-       margin: 80px auto;
-        }
-        p{
-            
-            font-size: 30px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: white;
-            
-            
-        }
-        .circle{
-            height: 40px;
-            width:40px;
+    
+      body {
+        background-color: lightgrey;
+      
+      }
+      #loader1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle{
+            height: 80px;
+            width:80px;
             border: 5px solid rgb(255,255,255,0.5);
             border-radius: 50%;
+            color: black;
             margin: 100px auto;
             border-top-color: #fff;
             animation:spin 1s linear infinite;
             margin-top: 130px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 350px;
+
             
         }
         @keyframes spin{
@@ -44,9 +47,6 @@
                 transform: rotate(360deg);
             }
         }
-      body {
-        background-color: lightgrey;
-      }
       .wrapper {
         width: 1100px;
         background-color: #fff;
@@ -113,11 +113,9 @@
       /* } */
     </style>
   </head>
-  <body style="background-color: #ecebbd">
-    <div id="loader">
-    <div class="circle"></div>
-    <div class="Load">
-        <p>Loading . . .</p>
+  <body >
+    <div id="loader1">
+    <div class="circle">
     </div>
     </div>
     
@@ -349,19 +347,10 @@
       </table>
     </div>
     <script>
-      document.onreadystatechange = function() {
-          if (document.readyState !== "complete") {
-              document.querySelector(
-                "body").style.visibility = "hidden";
-              document.querySelector(
-                "#loader").style.visibility = "visible";
-          } else {
-              document.querySelector(
-                "#loader").style.display = "none";
-              document.querySelector(
-                "body").style.visibility = "visible";
-          }
-      };
+     var loader=document.getElementById("loader1");
+     window.addEventListener("load",function(){
+       loader.style.display="none"
+     })
   </script>
   </body>
 </html>

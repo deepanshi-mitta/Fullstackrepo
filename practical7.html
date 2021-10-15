@@ -8,29 +8,26 @@
     <style>
         body{
             background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
         }
-        .Load{
-       margin: 80px auto;
-        }
-        p{
-            
-            font-size: 30px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: white;
-            
-            
-        }
+        
         .circle{
-            height: 40px;
-            width:40px;
+            height: 80px;
+            width:80px;
             border: 5px solid rgb(255,255,255,0.5);
             border-radius: 50%;
             margin: 100px auto;
             border-top-color: #fff;
             animation:spin 1s linear infinite;
             margin-top: 130px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 350px;
+
             
         }
         @keyframes spin{
@@ -42,8 +39,5 @@
 </head>
 <body>
     <div class="circle"></div>
-    <div class="Load">
-        <p>Loading . . .</p>
-    </div>
 </body>
 </html>
